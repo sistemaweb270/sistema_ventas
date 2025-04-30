@@ -1,0 +1,10 @@
+<?php
+$admin_password = 'admin'; // Choose a strong password
+$sales_password = '12345'; // Choose a strong password
+
+$admin_hash = password_hash($admin_password, PASSWORD_DEFAULT);
+$sales_hash = password_hash($sales_password, PASSWORD_DEFAULT);
+
+echo "admin: " . $admin_hash . "\n";
+echo "Vendedor: " . $sales_hash . "\n";
+?>
